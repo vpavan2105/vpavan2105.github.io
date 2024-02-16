@@ -15,11 +15,5 @@ document.querySelectorAll(".nav-btn").forEach(n => n.addEventListener("click", (
 function openResume(resumeUrl) {
     window.open(resumeUrl, '_blank');
 
-    link.href = resumeUrl;
-    link.id="resume-link-2"
-    link.download = 'resume.pdf';
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
 }
 
