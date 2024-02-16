@@ -213,9 +213,7 @@ height:fit-content;
   width:35vw;
   height:auto;
 }
-.project-dis{
- 
-}
+
 @media screen and (max-width:996px) {
   .project-card{
     flex-direction: column;
