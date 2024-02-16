@@ -143,7 +143,7 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  margin-bottom: 20px;
+  margin-bottom: 10px 0px 20px 0px;
 }
 .skills-section{
   display: grid;
@@ -179,11 +179,14 @@ height:fit-content;
   opacity: 1;
 }
 #projects{
+  margin-top:50px;
   display: flex;
   justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }
 .project-section{
-   height:180vh;
+
    width:70%;
   
 }
@@ -216,6 +219,28 @@ height:fit-content;
 .project-techstack-icons{
   width:30px;
   margin-left:10px;
+}
+
+#contact{
+  margin-top:50px;
+  display: flex;
+  flex-direction: column;
+ 
+  align-items: center;
+ 
+}
+.contact-icons{
+  height:50px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  padding:10px;
+  border-radius:16px;
+margin:10px;
+font-size:medium;
+
+}
+.link-contacts-icons{
+  text-decoration-line: none;
+  color: rgb(54, 84, 134);
 }
 
 @media screen and (max-width:996px) {
@@ -291,6 +316,6 @@ height:fit-content;
     grid-template-columns: repeat(3,1fr);
    }
   
-
+ 
   }
  
