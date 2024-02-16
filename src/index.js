@@ -13,12 +13,10 @@ document.querySelectorAll(".nav-btn").forEach(n => n.addEventListener("click", (
 
 
 function openResume(resumeUrl) {
-    // Open resume in a new tab
     window.open(resumeUrl, '_blank');
 
-    // Download resume as PDF
-    var link = document.createElement('a');
     link.href = resumeUrl;
+    link.id="resume-link-2"
     link.download = 'resume.pdf';
     document.body.appendChild(link);
     link.click();

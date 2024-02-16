@@ -155,11 +155,12 @@ body {
 }
 .skills-icons{
   width:70px;
+
 }
 .overlay {
   position: absolute; 
   top:70px; 
-  
+  z-index:5;
   background-color: #fcf8f8;
   color: #cf6c6c; 
   width:90px;
@@ -174,6 +175,7 @@ height:fit-content;
 }
 .image-skills{
   position:relative;
+  z-index:5;
 }
 .image-skills:hover .overlay {
   opacity: 1;
