@@ -1,0 +1,203 @@
+html{
+    font-size: calc(0.55rem + 1vw);
+}
+
+body {
+    padding: 0px;
+    margin: 0px;
+   
+  } 
+  
+  .container1 {
+    display: flex;
+    width:100vw;
+   
+    height: 60px;
+    position: fixed;
+    top:0;
+    z-index: 1;
+    background-color: rgb(54, 84, 134);
+    background-blend-mode: color-burn;
+  
+  }
+  
+  .navbar-1 {
+    display: flex;
+    height: 60px;
+    z-index: 1;
+    justify-content: space-between;
+    align-items: center;
+   
+  }
+  
+  .navbar-inner {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 15px;
+   height:40px;
+    width:100vw;
+  }
+  .navbar-inner a{
+   
+     text-decoration-line: none;
+  }
+ 
+  .nav-btn {
+    color: white;
+    font-family: "Playfair Display", serif;
+
+
+    font-size: 18px;
+    font-weight: 700;
+    width:fit-content;
+    text-align: center;
+  }
+  
+  .nav-btn:hover {
+    text-decoration-line: none;
+    cursor: pointer;
+    border: none;
+    border-bottom: 3px solid rgb(91, 228, 222);
+  }
+  
+  .hamburger-menu {
+    display: none;
+    cursor: pointer;
+    margin-left: 15px;
+    
+  }
+  
+  .bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    transition: all 0.3s ease;
+    background-color: rgba(29, 25, 25,0.8);
+  }
+  .resume-btn{
+    background-color: rgb(15, 16, 53,0.8);
+    padding:8px;
+    border-radius: 6px;
+    color:white;
+    cursor:pointer;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+
+
+  }
+.home-section{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   gap:20px;
+   align-items: center;
+   font-family: "Playfair Display", serif;
+   color: rgb(54, 84, 134,0.9);
+   font-weight: 900;
+    margin-top:60px;
+    background-color: rgb(20,29,36);
+    height:80vh;
+}
+.social-icons >a{
+    margin:0px 10px 0px 10px;
+    color: rgb(54, 84, 134);
+   
+    
+}
+.name{
+    font-size: 3em;
+    margin:0px;
+    padding:0px;
+}
+.section-aboutMe{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border:3px solid rgb(54, 84, 134);
+  
+    margin:10px ;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.aboutme{
+    min-height:70vh;
+    margin:10px;
+    width:70%;
+    display: flex;
+    gap:20px;
+    justify-content: center;
+    align-items: center;
+   
+}
+.profile-img{
+    border-radius: 24px;
+
+}
+.description > p{
+    font-size:large;
+    color:rgb(15, 16, 53)
+}
+.skills-section{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+ 
+
+  justify-items: center;
+  gap:30px;
+}
+.skills-icons{
+  width:80px;
+}
+  @media screen and (max-width: 728px) {
+    .container1{
+      position: fixed;
+      z-index: 1;
+
+    }
+    .navbar-1 {
+      justify-content: space-between;
+      z-index: 1;
+    
+    }
+    .hamburger-menu {
+      display: block;
+    }
+    .hamburger-menu.active .bar:nth-child(2) {
+      opacity: 0;
+    }
+    .hamburger-menu.active .bar:nth-child(1) {
+      transform: translateY(8px) rotate(45deg);
+    }
+    .hamburger-menu.active .bar:nth-child(3) {
+      transform: translateY(-8px) rotate(-45deg);
+    }
+    .navbar-inner {
+      position: fixed;
+      flex-direction: column;
+      top: -300px;
+      gap: 0;
+      border: none;
+      width: 100vw;
+      height:275px;
+     
+    }
+    .nav-btn {
+      margin: 6px 0;
+     height:30px;
+    }
+    .navbar-inner.active {
+      top: 60px;
+     background-color: rgb(54, 84, 134,0.9);
+    
+   
+    }
+   #name{
+    font-size: 2.3em;
+   }
+   .aboutme{
+    
+    flex-direction: column;
+   }
+  }
+ 
